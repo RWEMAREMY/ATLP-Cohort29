@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>what's app</title>
+<style>
+  body{
+    background-image: url('image\ 2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .bar{
+    display: flex;
+    font-size:x-large;
+    color: white;
+  }
+  .apple{
+    width: 40px;
+    height: 30px;
+    top:10%;
+  }
+  .menubar{
+      display: flex;
+    font-size:x-large;
+    color: white;
+    margin-left: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .menubar1{
+    border: 2px;
+    cursor: pointer;
+  }
+  .menubar>label{
+    font-size: xx-large;
+  }
+ 
+  .part{
+    background-color: white;
+    border: 2px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: left;
+    width: 57.6%;
+    margin-left: 300px;
+    
+
+  }
+  .part1{
+    background-color: white;
+   
+    width: 60px;
+    height: 40px;
+    box-sizing:content-box;
+    border: 2px;
+    border-radius: 40px;
+    display:inline-block;
+    margin-left: 30px;
+    border: none;
+    justify-content: flex-start;
+    display: flex;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+   
+
+    
+  }
+  .part1:hover{
+    background-position: 20px 10px;
+    width: 90%;
+    color: black;
+    background-color: rgb(219, 219, 226);
+    font-size: large;}
+    
+ 
+  .part2{
+padding: 10px;
+margin-left: 290px;
+display: flex;
+justify-content:first baseline;
+  }
+  .lis{
+    margin-left: 30px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+  
+    
+  }
+  .part2.lis{
+    display: flex;
+    justify-items:right;
+  }
+ 
+  .list{
+    
+    display:inline-block;
+    margin-left: 90px;
+    border: none;
+    width: 300px;
+    height: 113px;
+    justify-content: flex-start;
+    display: flex;
+    background-color :white;
+   
+
+
+  }
+  .list:hover{
+    background-color: #aef6de;
+    border-radius: 20px;
+  }
+  .list p{
+    width: 200px;
+    justify-content: left;
+    margin-left: 1px;
+    display:flex ;
+   
+  }
+.data{
+  margin-top: 2px;
+}
+.search{
+  width: 250px;
+  margin-left: 90px;
+  margin-bottom: 30px;
+  justify-content:start;
+  display: flex;
+  font-size: large;
+  border-radius: 40px;
+  background-image: url('icon.svg');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+
+}
+.time-right{
+  color: rgba(98, 228, 98, 0.99);
+  font-weight: bolder;
+  font-size:16px
+
+}
+.time-rights{
+  color: rgba(91, 94, 91, 0.99);
+  font-weight: bolder;
+  font-size:16px
+
+}
+b{
+  display: flex;
+  padding-left: 8px;
+  width: 2px;
+  justify-content: left;
+  margin-left: 1px;
+  
+}
+.inner{
+  
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  
+}
+.inner1{
+  
+  background-color: white;
+  border: none;
+  width: 10%;
+  height: 50px;
+  justify-content:left;
+  display: flex;
+  font-size: large;
+  font-weight: bolder;
+  
+}
+.inner1:hover{
+  background-color: #aef6de;
+  border-radius: 15px;
+
+
+}
+.inner2{
+  display: flex;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px 90px;
+  padding: 1px;
+
+}
+.inner2>button{
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  border: none;
+  justify-content: flex-end;
+
+}
+.colour{
+  height: 15px;
+  width: 12px;
+  position: absolute;
+  padding: 5px 8px;
+  border-radius: 50%;
+  background-color:rgb(30, 241, 160);
+  color: white; 
+
+}  
+.pink{
+  justify-content: center;
+  display: flex;
+}
+#message{
+  border: 34px;
+  background-color:rgba(242, 236, 236, 0.35);
+  display:block;
+  justify-content:flex-start;
+  border-radius: 20px;
+  width:40%;
+  height:auto; 
+ 
+}
+#message1{
+  border: 34px;
+  background-color:rgba(242, 236, 236, 0.35);
+  display:block;
+  justify-content:flex-end;
+  border-radius: 20px;
+  width:40%;
+  height:auto;  
+  margin: 0px;
+}
+#messageright{
+border: 20px;
+
+display:flex;
+align-items: flex-end;
+justify-content: flex-end;
+padding:3px;
+border: 2px;
+border-radius: 20px;
+width:100%;
+height:auto;  
+
+}
+#messageright>div{
+  border:2px ;
+  border-radius: 20px;
+  background-color: rgb(167, 250, 209);
+  text-align: center;
+ 
+}
+.typing{
+  background-color: #d1d1d1c5;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.typing1{
+  margin-left:10px;
+  width: 25px;
+  height: 25px;
+  
+}
+.typing2{
+  margin-left:20px;
+  width: 25px;
+  height: 25px;
+}
+.typing3{
+  margin-left:20px;
+  width: 72.7%;
+  height: 30px;
+  border-radius: 20px;
+  border:0px solid;
+  border-color: #d1d1d1c5;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+font-size:x-large;
+}
+.typing4{
+  margin-left:20px;
+  width: 25px;
+  height: 25px;
+}
+
+</style>
+    </head>
+<body >
+  <section class="bar">
+    <div>
+    <li class="bar">
+        <ol><img src="apple.svg" class="apple"></ol>
+        <ol>what's app</ol>
+        <ol>file</ol>
+        <ol>edit</ol>
+        <ol>view</ol>
+        <ol>Go</ol>
+        <ol>window</ol>
+        <ol>help</ol>
+    </li>
+</div>
+<div class="menubar">
+   <img src="7.svg"class="menubar1">
+  <img src="8.svg" class="menubar1">
+ <img src="9.svg" class="menubar1">
+  <img src="10.svg" class="menubar1">&nbsp;&nbsp;
+ <label>Thu&nbsp;&nbsp;12&nbsp;&nbsp;Oct&nbsp;&nbsp;<time>16:41</time></label>
+</div>
+</section>
+<div class="part">
+<div>
+    <li>
+        <ol><button class="part1"><img src="Traffic lights.svg" > </button></ol><br><br><br><br><br>
+        <ol><button class="part1"><img src="Group 1735.svg"><br>chat </button></ol><br>
+        <ol><button class="part1"><img src="Group 1939.svg" ><br> Update</button></ol><br>
+        <ol><button class="part1"><img src="group 1.svg" ><br>Community</button></ol><br>
+        <ol><button class="part1"><img src="call.svg" ><br>calls</button></ol><br>
+        <ol><button class="part1"><img src="Group 1940.svg" ><br>Channels</button></ol><br><br><br><br><br><br><br><br><br><br>
+        <ol><button class="part1"> <img src="help_outline.svg" ></button></ol><br>
+        <ol><button class="part1"><img src="Rectangle 2029.png" ></button></ol><br>
+      
+    </li>
+</div>
+<section class="data">
+<div class="part2">
+    
+        <img src="compose 1.png" class="lis">
+        <img src="Arrow - Down 2.png" class="lis">
+  
+    
+    
+</div>
+
+
+<div>
+  <input class="search" type="text" aria-placeholder="icon.svg" placeholder="search or start a new chart" >
+</div>
+
+
+
+
+<section class="listy">
+  <div >
+    <button class="list">
+      <img src="Frame 1938.png">
+      <p><b>Claire</b>
+      <br><br>Haha oh man</p>
+      <span class="time-right">13:00 <br> <br><img src="Vector1.svg" ></span>
+    </button>
+    
+  </div>
+  <div>
+    <button class="list">
+      <img src="avatar.jpg">
+      <p> <b>Joe</b>
+        <br><br>Haha that's terrifying 😂</p>
+      <span class="time-right">15:00 <br> <br><img src="Vector.svg" ></span>
+    </button>
+    
+  </div>
+  <div>
+    <button class="list">
+      <img src="soldier.png">
+      <p><b>Optimus prime</b><br><br>My name is Optimus prime 🤖</p>
+      <span class="time-right">2:00<br><br><span class="colour">5+</span></span>
+      
+    </button>
+    
+  </div>
+  <div>
+    <button class="list">
+      <img src="puppet.png">
+      <p> <b>Progete Rwanda Deve...</b>
+      <br><br><br>~Theotime: This is amazing...</p>
+      <span class="time-right">6:00<br> <br><span class="colour">1</span></span>
+    </button>
+    
+  </div>
+  <div>
+    <button class="list">
+      <img src="yves.png">
+      <p><b>Yves</b><br><br>Bro, that’s so sick ⚡️</p>
+      <span class="time-right">3:00<br> <br><span class="colour">3</span></span>
+    </button>
+    
+  </div>
+  <div>
+    <button class="list">
+      <img src="brank.png">
+      <p><b>Mucyo</b><br><br>The new update is live 🚀</p>
+      <span class="time-right">5:00<br> <br><span class="colour">2</span></span>
+    </button>
+   
+  </div>
+  <div>
+    <button class="list">
+      <img src="lady.png">
+      <p><b>Joy</b><br><br> Haha that's terrifying 😂</p>
+      <span class="time-right">12:00<br> <br><span class="colour">6</span></span>
+    </button>
+   
+  </div>
+  <div>
+    <button class="list">
+      <img src="brank.png">
+      <p><b>elvin</b><br><br> Are yu still there?</p>
+      <span class="time-right">1:00<br> <br><span class="colour">4</span></span>
+    </button>
+   
+  </div>
+
+</section>
+</section>
+<section class="inner">
+  
+  <div >
+  
+
+    <div class="inner2" >
+      <button class="inner1"><img src="pp.png" alt="chat" ><p><b>RegisSaffi</b></p>
+      </button> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button><img src="cam.png" alt="chat">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <img src="phone.png" alt="chat">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+       
+        <img src="magnifying.png" alt="chat">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        &nbsp;<img src="arrow.png" alt="chat">
+      </button>
+  
+    </div><br><br><br><br><br>
+    <section class="pink">
+    <div style="width: 478px; height: 48px; padding-left: 24px; padding-right: 24px; padding-top: 12px; padding-bottom: 12px; background: #FEECDC; border-radius: 12px; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex ">
+    <div style="height: 20px; justify-content: center; align-items: flex-start; display: flex">
+    <div style="height: 20px; padding-top: 1.17px; padding-bottom: 3.25px; padding-left: 4.08px; padding-right: 4.08px; justify-content: flex-start; align-items: flex-start; display: flex">
+    <div style="width: 11.83px; height: 15.58px; background: #667781"><img src=""></div>
+    <<div className="Vector" style={{width: 11.83, height: 15.58, background:#667781></div>
+        </div>
+      </div>
+      <div style="width: 400px; color: #3B4A54; font-size: 10px; font-family: Helvetica Neue; font-weight: 400; word-wrap: break-word"> are end-to-end encrypted. No one outside of this chat, not even WhatsApp can read or listen to them click to learn more.</div>
+    </div>
+  </section>
+
+<br>
+
+  <section id="message">
+    <div>
+      <p >Hey brother , Are you still a fan of UI design?<br> Can i show you something?</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="time-rights">1:00</span>
+    </div>
+  </section> 
+  <br>
+  <section id="messageright">
+    <div>
+      <p ></p> Hey Regis,absolutely</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="time-rights">1:00 &nbsp;&nbsp;&nbsp;<img src="Vector.svg" ></span>
+    </div>
+  </section> 
+
+  <br><br>
+  <section id="message1">
+    <div>
+      <p><img src="Frame.png"></p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="time-rights">1:00</span>
+    </div>
+  </section> 
+
+  <section id="message">
+    <div>
+      <p> Check out the cool project,I'm working on <img src="Frame1.png"></p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="time-rights">1:00</span>
+    </div>
+  </section> 
+  <br><br>
+  <section id="messageright">
+    <div>
+      <p > Looks awesome</p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="time-rights">1:00 &nbsp;&nbsp;&nbsp;<img src="Vector.svg" ></span>
+    </div>
+  </section> 
+  <br><br>
+ 
+<div class="typing">
+  <img src="1.svg" class="typing1">
+<img src="3.svg" class="typing2">
+<input type="text" placeholder="Type a message" class="typing3">
+<img src="2.svg"class="typing4">
+</div>
+  
+  
+</div>
+
+<div>
+  
+</div>
+
+</section>
+
+</div>
+
+</body>
+</html>

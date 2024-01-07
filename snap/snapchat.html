@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snapchat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: x-large;
+      background-color: #ffffff;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+     bottom: 100%;
+      top:100%;
+      margin: 0; 
+      padding: 0;
+    }
+
+    form {
+      background-color: #f0eeee;
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+   border-radius: 20px;
+    }
+
+    .banner {
+      background-color: rgb(254, 254, 13);
+      width: 84%;
+      height: 80px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      padding: 40px;
+      border-radius: 20px;
+    }
+
+    h1 {
+      font-size: xx-large;
+    }
+
+    h2 {
+      color: rgb(254, 254, 13);
+      background-color: black;
+      border: 2px ;
+      border-radius: 40px;
+      padding: 25px;
+      font-size: medium;
+      margin: 80px;
+    }
+
+    .insert-container {
+      width: 100%;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .insert {
+      width: 75%;
+      padding: 20px;
+      border-width: 0 0 5px;
+      border-radius: 10px;
+      outline: 0;
+      border-color: #000;
+      transition: border-color 0.3s;
+    }
+
+    .insert:focus,
+    .insert:placeholder-shown {
+      border-color: rgb(4, 4, 4);
+      outline: 1px dotted #000;
+    }
+
+    .floating-label {
+      position: absolute;
+      top: 20px;
+      left: 45px;
+      pointer-events: none;
+      transition: 0.3s ease-out;
+      transform-origin: left top;
+      transform: translateY(-50%) scale(0.8);
+      font-size: 25px;
+      color: #000;
+    }
+
+    .insert:focus ~ .floating-label,
+    .insert:not(:placeholder-shown) ~ .floating-label {
+      transform: translateY(-100%) scale(0.8);
+      font-size: 17px;
+      color: rgb(171, 186, 171);
+    }
+
+    button {
+      width: 75%;
+      background-color: rgb(96, 98, 98);
+      color: white;
+      font-size: x-large;
+      cursor: pointer;
+      border: 2px ;
+      border-radius: 40px;
+      padding: 25px;
+      font-size: medium;
+      margin: 80px;
+    }
+
+    button:hover {
+      color: black;
+      background-color: yellow;
+      font-weight: bolder;
+    }
+
+    p {
+      font-size:medium;
+      color: rgba(96, 98, 98, 0.565);;
+    }
+
+  
+    .signup{
+      padding: 2px;
+    }
+    .forget{
+      font-size:small;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+  
+      <div class="banner">
+        <img src="Vector.png" alt="Banner Icon">
+      </div>
+  
+    <div class="ph">
+      <h1>WELCOME BACK</h1>
+      <h2>Log in via Google</h2>
+      <h3>Trouble logging in?</h3>
+      <p>-OR-</p>
+    </div>
+    <div>
+      <div class="insert-container">
+        <input class="insert" type="text" id="username" placeholder=" " required>
+        <label class="floating-label" for="username">USERNAME OR EMAIL</label>
+      </div>
+      <div class="insert-container">
+        <input class="insert" type="password" id="password" placeholder=" "required>
+        <label class="floating-label" for="password">PASSWORD</label>
+      </div>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;
+    <a class="forget" href="#">Forget password</a><br>
+    <button type="submit">Login</button>
+    <h5><a class="signup" href="#">Sign up</a> if you don't have an account</h5>
+  </form>
+</body>
+</html>
